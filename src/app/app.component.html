@@ -1,0 +1,13 @@
+<div style="padding: 20px;">
+  <h1 style="color: blue">{{title}}</h1>
+  <h3>{{description}}</h3>
+  <nav>
+    <a routerLink="customer" class="btn btn-primary active" role="button" routerLinkActive="active">Customers</a>
+    <a routerLink="add" class="btn btn-primary active" role="button" routerLinkActive="active">Add</a>
+    <a routerLink="findbyage" class="btn btn-primary active" role="button" routerLinkActive="active">Search</a>
+    <a routerLink="partner" class="btn btn-primary active" role="button" routerLinkActive="active">Partners</a>
+    <a routerLink="addpartner" class="btn btn-primary active" role="button" routerLinkActive="active">Add Partner</a>
+    <a routerLink="findpartnerbyage" class="btn btn-primary active" role="button" routerLinkActive="active">Search Partner</a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

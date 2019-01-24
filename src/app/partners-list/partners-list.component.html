@@ -1,0 +1,9 @@
+<h1>Partners</h1>
+
+<div *ngFor="let partner of partners | async" style="width: 300px;">
+  <partner-details [partner]='partner'></partner-details>
+</div>
+
+<div>
+  <button type="button" class="button btn-danger" (click)='deletePartners()'>Delete All</button>
+</div>

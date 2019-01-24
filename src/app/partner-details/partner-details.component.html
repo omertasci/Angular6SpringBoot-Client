@@ -1,0 +1,19 @@
+<div *ngIf="partner">
+  <div>
+    <label>Name: </label> {{partner.name}}
+  </div>
+  <div>
+    <label>Age: </label> {{partner.age}}
+  </div>
+  <div>
+    <label>Active: </label> {{partner.active}}
+  </div>
+
+  <span class="button is-small btn-primary" *ngIf='partner.active' (click)='updateActive(false)'>Inactive</span>
+
+  <span class="button is-small btn-primary" *ngIf='!partner.active' (click)='updateActive(true)'>Active</span>
+
+  <span class="button is-small btn-danger" (click)='deletePartner()'>Delete</span>
+
+  <hr/>
+</div>
